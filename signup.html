@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SEE TURTLE PH - forms</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link href="assets/img/main_page/turtle.png" rel="icon">
+	<!--===============================================================================================-->
+	<link href="assets/css/main_page/main.css" rel="stylesheet">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/form_page/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/form_page/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/form_page/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/form_page/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/form_page/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/form_page/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/form_page/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/form_page/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/css/form_page/util.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/form_page/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" method="post">
+					<span class="login100-form-title p-b-43">
+						<a href="index.html"><img style="width: 50px; height:auto; float: right" src="assets/img/form_page/icons/home.png"></a>
+						<h1>CREATE AN ACCOUNT</h1>
+						<p>Fill out the following information</p>
+						<span style="font-size: 20px;">
+							<?php if (!empty($errors)) { ?>
+								<?php include "layouts/_error-messages.php" ?>
+							<?php } ?>
+						</span>
+					</span>
+
+					<div class="wrap-input200">
+						<input class="input100" type="text" name="lastName" value="" placeholder="Last Name"/>
+					</div>
+
+
+					<div class="wrap-input200">
+						<input class="input100" type="text" name="firstName" value="" placeholder="First Name"/>
+					</div>
+
+					<div class="wrap-input200">
+						<input class="input100" type="text" name="middleInitial" value="" placeholder="Middle Initial"/>
+					</div>
+
+					<div class="wrap-input300">
+						<input class="input100" type="number" name="age" value="" placeholder="Age"/>
+					</div>
+
+					<select type="text" name="sex" value="<?= $_POST['sex'] ?>" class="wrap-input300" />
+                            <option value="" disabled selected>Sex</option>
+                            <option value=" Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+
+					<div class="wrap-input300">
+						<input class="input100" type="text" name="homeAddress" value="" placeholder="Home Address" />
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="text" name="organization" value="" placeholder="School/Organization/University/Office" />
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="text" name="contactNumber" value="" placeholder="Contact Number" />
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="email" name="email" value="" placeholder="Email" />
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="password" name="password" value="" placeholder="Password"/>
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="password" name="confirm_password" value="" placeholder="Confirm Password" />
+					</div>
+
+					<div class="container-login100-form-btn">
+						<input type="submit" class="login100-form-btn" name="submit"  value="SIGN UP" />
+					</div>
+
+					<div class="text-center p-t-46 p-b-20">
+						<span class="txt2">
+							Already have an account? <a href="login.html">Login Here</a>
+							</p>
+						</span>
+					</div>
+
+					<div class="text-center p-t-46 p-b-20">
+
+					</div>
+
+
+				</form>
+
+				<div class="login100-more" style="background-image: url('assets/img/form_page/bg-01.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="preloader"></div>
+
+	<!--===============================================================================================-->
+	<script src="assets/vendor/form_page/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="assets/vendor/form_page/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="assets/vendor/form_page/bootstrap/js/popper.js"></script>
+	<script src="assets/vendor/form_page/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="assets/vendor/form_page/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="assets/vendor/form_page/daterangepicker/moment.min.js"></script>
+	<script src="assets/vendor/form_page/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="assets/vendor/form_page/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="assets/js/form_page/main.js"></script>
+	
+	<!-- Template Main JS File -->
+	<script src="assets/js/main_page/main.js"></script>
+
+</body>
+
+</html>
